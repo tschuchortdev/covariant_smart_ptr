@@ -30,4 +30,4 @@ A functor is a structure preserving mapping between two categories (possible the
 
 	Analogously, a `Customer` buying any `Car` can be used in any place that expects a `Customer` willing to buy a `BMW`.  `Customer(Car)` is a subtype of `Customer(BWM)` even though `BMW` is a subtype of `Car`. The subtype relation is reversed, thus `Customer` must have a contravariant functor.
 
-
+	Disclaimer: contravariant functors aren't really functors at all, since they don't preserve the composition of morphisms exactly, they preserve the opposite. So contravariant functors don't truly exist in category theory, they are actually functors of the opposite category, but for the sake of convenience we pretend that they do. 
